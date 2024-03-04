@@ -80,13 +80,13 @@ const getMail = async (req, resp) => {
       port: 587,
       secure:false,
       auth: {
-        user: 'donnber103@gmail.com',
-        pass: 'hpim klsc htgn bftk'},
+        user: 'abc103@gmail.com',
+        pass: 'token'},  // we have to take this token from google.
     });
 
     var mailOptions = {
-      from:'donnber103@gmail.com',
-      to:['bmaan6041@gmail.com'],
+      from:'abc103@gmail.com',
+      to:['def6041@gmail.com'],
       subject:'OTP',
       text:`Your OTP is ${req.query.OTP}`
     }
